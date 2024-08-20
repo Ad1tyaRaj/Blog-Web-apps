@@ -1,5 +1,7 @@
 # Django Blog Web Application
 
+![Screenshot 2024-08-21 003114](https://github.com/user-attachments/assets/56e831a7-eaaa-4e16-9f6c-ded8a9de5bd4)
+
 ## Overview
 This repository contains a Django-based blog web application that allows users to create, edit, and manage blog posts, as well as interact with content through comments. The app features user authentication, category filtering, and a clean, responsive design using Bootstrap.
 
