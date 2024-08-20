@@ -16,21 +16,29 @@ This repository contains a Django-based blog web application that allows users t
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/django-blog-web-app.git
-cd django-blog-web-app
+2.cd django-blog-web-app
 
 
-python3 -m venv env
-source env/bin/activate  # On Windows use `env\Scripts\activate`pip install -r requirements.txt
+3.python3 -m venv env
+
+4. source env/bin/activate  # On Windows use `env\Scripts\activate`pip install -r requirements.txt
 
 
-pip install -r requirements.txt
+5.pip install -r requirements.txt
 
 
-python manage.py migrate
+6.python manage.py migrate
 
-python manage.py createsuperuser
 
-python manage.py runserver
+
+7.python manage.py createsuperuser
+
+8.python manage.py runserver
+
+Usage
+Admin Panel: Manage users, posts, categories, and comments from the Django admin interface (/admin).
+User Registration and Login: Users can register and log in to create and comment on posts.
+Post Creation: Authenticated users can create, edit, and delete their own posts.
 
 
 
