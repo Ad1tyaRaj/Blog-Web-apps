@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techbust.com</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'Home.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Techbust</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a target="_blank" href="{% url 'register' %}">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% for d in Data %}
+    <main>
+
+        <div class="container">
+
+
+
+
+            <article class="post">
+                <img class="Image"
+                    src="/Media/{{d.profile_img}}"
+                    alt="">
+                <h2 name = 'Post-title' >{{d.Post_title}}</h2>
+
+                <p class="meta">Posted on June 1, 2024 by John Doe</p>
+                <p name = 'description '>{{d.discription}}</p>
+
+                <a href="#" class="read-more">Read more</a>
+            </article>
+
+        </div>
+
+    </main>
+    {% endfor %}
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
